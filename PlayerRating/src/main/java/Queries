@@ -1,3 +1,5 @@
+-----SQL Queries-------
+
 create database PlayerRatingPortal;
 use PlayerRatingPortal;
 
