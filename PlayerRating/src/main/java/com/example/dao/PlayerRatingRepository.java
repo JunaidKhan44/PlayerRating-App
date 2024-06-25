@@ -15,11 +15,6 @@ import com.example.entities.PlayerRating;
 
 public interface PlayerRatingRepository extends JpaRepository<PlayerRating, Long>{
 	
-	
-	
 	@Query("SELECT CASE WHEN COUNT(rt) > 0 THEN TRUE ELSE FALSE END FROM PlayerRating rt WHERE rt.playerRatingId = :id")
 	Boolean isPlayerRatingExistById(Long id);
-
-	
-
 }
