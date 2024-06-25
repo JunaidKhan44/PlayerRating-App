@@ -60,8 +60,4 @@ public class PlayerRatingDto {
 	public void setMatchesPlay(String matchesPlay) {
 		this.matchesPlay = matchesPlay;
 	}
-	
-		
-	
-	
 }
