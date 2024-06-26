@@ -75,9 +75,4 @@ public class ValidationUtility {
 		}
 		return true;
 	}
-
-	public static void main(String[] args) throws IOException {
-		
-		
-	}
 }
