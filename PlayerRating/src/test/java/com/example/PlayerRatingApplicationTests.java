@@ -12,7 +12,6 @@ import com.example.validation.BasicValidation;
 class PlayerRatingApplicationTests {
 
 	PlayerRating st = new PlayerRating(1L, 9, "Ali", 20, "3");
-	
 	BasicValidation validator = new BasicValidation();
 
 	@Test
@@ -21,30 +20,20 @@ class PlayerRatingApplicationTests {
 
 	@Test
 	void checkAge() {
-
-		
 		Boolean flag = validator.isValidAge(st);
 		assertThat(flag).isTrue();
-
 	}
 	
 	@Test
 	void checkScore() {
-
-		
 		Boolean flag = validator.isValidScore(st);
 		assertThat(flag).isTrue();
-
 	}
 	
 	@Test
 	void checkMatchesPlay() {
-
-		
 		Boolean flag = validator.isValidMatchesPlay(st);
 		assertThat(flag).isTrue();
-		
-
 	}
 }
 
