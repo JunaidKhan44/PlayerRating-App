@@ -26,29 +26,19 @@ public class PlayerRatingRepositoryTest {
 	
 	@Test
 	void isPlayerRatingExistById() {
-		
 		PlayerRating st = new PlayerRating(1L,20,"Ali",20,"3");
-		
 		repository.save(st);
-		
 		Boolean  res= repository.isPlayerRatingExistById(st.getPlayerRatingId());
-		
-		assertThat(res).isTrue();
-		
+		assertThat(res).isTrue();	
 	}
 
 	
 	@Test
 	void isValidScore() {
-		
 		PlayerRating st = new PlayerRating(1L,20,"Ali",20,"3");
-		
 		repository.save(st);
-		
 		Boolean  res= repository.isPlayerRatingExistById(st.getPlayerRatingId());
-		
 		assertThat(res).isTrue();
-		
 	}
 	
 	@AfterEach
