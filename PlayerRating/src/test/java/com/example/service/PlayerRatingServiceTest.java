@@ -35,10 +35,8 @@ public class PlayerRatingServiceTest {
 
 	@Test
 	void getAllStudent() {
-
 		service.getAllPlayers();
 		verify(repository).findAll();
-		
 	}
 	
 }
