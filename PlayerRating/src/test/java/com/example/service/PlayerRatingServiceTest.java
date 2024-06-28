@@ -24,8 +24,6 @@ public class PlayerRatingServiceTest {
 
 	@Mock  
 	private PlayerRatingRepository repository;
-	
-	
 	private PlayerRatingServiceImpl service;
 
 	@BeforeEach
